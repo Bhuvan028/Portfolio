@@ -10,7 +10,9 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: false,
     rollupOptions: {
-      input: './src/main.jsx',
+      input: {
+        app: './index.html'
+      },
       output: {
         entryFileNames: `assets/[name].js`,
         chunkFileNames: `assets/[name].js`,

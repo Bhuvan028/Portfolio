@@ -30,9 +30,13 @@ jobs:
         run: |
           rm -rf dist
           npm run build
+          ls -la dist/
 
-      - name: Copy index.html to 404.html
-        run: cp dist/index.html dist/404.html
+      - name: Create 404.html
+        run: |
+          mkdir -p dist
+          cp index.html dist/index.html
+          cp dist/index.html dist/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
