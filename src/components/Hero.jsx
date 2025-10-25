@@ -74,7 +74,7 @@ const Hero = () => {
             {/* Animated Button */}
             <motion.a
               variants={childVariants}
-              href="/Pasapala_Bhuvanesh_Resume.pdf"
+              href="Pasapala_Bhuvanesh_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
