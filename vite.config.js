@@ -7,13 +7,16 @@ export default defineConfig({
   base: '/Portfolio/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
+    emptyOutDir: true,
+    sourcemap: true,
     rollupOptions: {
+      input: {
+        main: './index.html'
+      },
       output: {
-        manualChunks: undefined,
-        assetFileNames: 'assets/[name].[hash].[ext]',
+        entryFileNames: 'assets/[name].[hash].js',
         chunkFileNames: 'assets/[name].[hash].js',
-        entryFileNames: 'assets/[name].[hash].js'
+        assetFileNames: 'assets/[name].[hash].[ext]'
       }
     }
   }
