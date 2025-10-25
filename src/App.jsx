@@ -1,10 +1,10 @@
-import Contact from "./Components/Contact"
-import Details from "./Components/Details"
-import Experience from "./Components/Experience"
-import Hero from "./Components/Hero"
-import Navbar from "./Components/Navbar"
-import Projects from "./Components/Projects"
-import Technologies from "./Components/Technologies"
+import Contact from "./components/Contact"
+import Details from "./components/Details"
+import Experience from "./components/Experience"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
+import Technologies from "./components/Technologies"
 
 const App = () => {
   return (
