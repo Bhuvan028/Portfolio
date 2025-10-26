@@ -74,11 +74,11 @@ const Hero = () => {
             {/* Animated Button */}
             <motion.a
               variants={childVariants}
-              href="/Pasapala_Bhuvanesh_Resume.pdf"
+              href="./Pasapala_Bhuvanesh_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download
-              className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10"
+              download="Pasapala_Bhuvanesh_Resume.pdf"
+              className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10 hover:bg-stone-100"
             >
               Download Resume
             </motion.a>
